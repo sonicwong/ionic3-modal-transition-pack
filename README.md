@@ -1,4 +1,4 @@
-## Transition class for Ionic v3+ (Animation based on animate.css) ##
+## Modal transition class for Ionic v3+ (Animation based on animate.css) ##
 https://github.com/sonicwong/ionic-modal-transition-pack
 
 # How to use
