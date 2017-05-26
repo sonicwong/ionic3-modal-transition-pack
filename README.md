@@ -37,16 +37,6 @@ export class AppModule {
 
 3) Add below code to "yourView.ts":
 <pre>
-public presentYourModal() {
-    const yourModal = this.modalController.create(YourModalComponent, { userId: 46 }, {
-        showBackdrop: false,
-        enableBackdropDismiss: false,
-        enterAnimation: 'modal-scale-up-enter',
-        leaveAnimation: 'modal-scale-up-leave'
-    });
-    yourModal.present();
-}
-
 this.modal = this.modalCtrl.create(ModalContentPage, {someVar: 'someValue'}, {
     showBackdrop: false,   // <-- this is not support yet
     enableBackdropDismiss: false,
