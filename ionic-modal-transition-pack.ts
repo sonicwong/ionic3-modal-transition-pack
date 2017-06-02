@@ -1,5 +1,7 @@
+// https://github.com/sonicwong/ionic-modal-transition-pack/
 // code base on: https://github.com/driftyco/ionic/blob/master/src/components/modal/modal-transitions.ts
 // animation base on: https://github.com/daneden/animate.css/blob/master/animate.css
+// v0.2
 import { Animation, PageTransition } from 'ionic-angular';
 
 
@@ -12,7 +14,7 @@ export class ModalEnterDirect extends PageTransition {
         const ele: HTMLElement = this.enteringView.pageRef().nativeElement;
         const wrapper = new Animation(this.plt, ele.querySelector('.modal-wrapper'));
         const backdrop = new Animation(this.plt, ele.querySelector('ion-backdrop'));
-        wrapper.beforeStyles({ 'opacity': 1 });
+        wrapper.beforeStyles({ 'transform': 'scale3d(1, 1, 1)' });
         backdrop.beforeStyles({ 'opacity': 0.4 });
         this
             .element(this.enteringView.pageRef())
@@ -46,7 +48,7 @@ export class ModalEnterFadeIn extends PageTransition {
         const ele: HTMLElement = this.enteringView.pageRef().nativeElement;
         const wrapper = new Animation(this.plt, ele.querySelector('.modal-wrapper'));
         const backdrop = new Animation(this.plt, ele.querySelector('ion-backdrop'));
-        wrapper.beforeStyles({ 'opacity': 1 });
+        wrapper.fromTo('transform', 'scale3d(1, 1, 1)', 'scale3d(1, 1, 1)');
         wrapper.fromTo('opacity', 0, 1);
         backdrop.fromTo('opacity', 0.01, 0.4);
         this
@@ -85,7 +87,7 @@ export class ModalEnterZoomIn extends PageTransition {
         const ele: HTMLElement = this.enteringView.pageRef().nativeElement;
         const wrapper = new Animation(this.plt, ele.querySelector('.modal-wrapper'));
         const backdrop = new Animation(this.plt, ele.querySelector('ion-backdrop'));
-        wrapper.beforeStyles({ 'opacity': 1 });
+        //wrapper.beforeStyles({ 'opacity': 1 });
         wrapper.fromTo('transform', 'scale3d(.3, .3, .3)', 'scale3d(1, 1, 1)');
         backdrop.fromTo('opacity', 0.01, 0.4);
         this
@@ -125,7 +127,7 @@ export class ModalEnterZoomOut extends PageTransition {
         const ele: HTMLElement = this.enteringView.pageRef().nativeElement;
         const wrapper = new Animation(this.plt, ele.querySelector('.modal-wrapper'));
         const backdrop = new Animation(this.plt, ele.querySelector('ion-backdrop'));
-        wrapper.beforeStyles({ 'opacity': 1 });
+        //wrapper.beforeStyles({ 'opacity': 1 });
         wrapper.fromTo('transform', 'scale3d(1.3, 1.3, 1.3)', 'scale3d(1, 1, 1)');
         backdrop.fromTo('opacity', 0.01, 0.4);
         this
