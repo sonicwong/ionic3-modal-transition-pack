@@ -12,7 +12,8 @@ import {
     ,ModalEnterFadeIn, ModalLeaveFadeOut
     ,ModalEnterZoomIn, ModalLeaveZoomIn
     ,ModalEnterZoomOut, ModalLeaveZoomOut
-} from '../classes/ionic-modal-transition-pack';
+    ,ModalEnterSlideInRight, ModalLeaveSlideOutRight
+} from '../ionic-modal-transition-pack';  // <-- if you put ionic-modal-transition-pack.ts under '/src' folder.
 
 export class AppModule {
     constructor(public config: Config) {
@@ -31,6 +32,9 @@ export class AppModule {
         
         this.config.setTransition('ModalEnterZoomOut', ModalEnterZoomOut);
         this.config.setTransition('ModalLeaveZoomOut', ModalLeaveZoomOut);
+        
+        this.config.setTransition('ModalEnterSlideInRight', ModalEnterSlideInRight);
+        this.config.setTransition('ModalLeaveSlideOutRight', ModalLeaveSlideOutRight);
     }
 }
 </pre>
