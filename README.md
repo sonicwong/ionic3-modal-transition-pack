@@ -54,3 +54,7 @@ this.modal = this.modalCtrl.create(ModalContentPage, {someVar: 'someValue'}, {
 
 # Copyright
 sw2hk.com
+
+# For Ionic 4 Support
+Please refer to this post:
+https://www.joshmorony.com/create-a-custom-modal-page-transition-animation-in-ionic/
