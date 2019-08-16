@@ -1,5 +1,5 @@
 // https://github.com/sonicwong/ionic-modal-transition-pack/
-// code base on: https://github.com/driftyco/ionic/blob/master/src/components/modal/modal-transitions.ts
+// code base on: https://github.com/ionic-team/ionic/blob/v3.9.2/src/components/modal/modal-transitions.ts
 // animation base on: https://github.com/daneden/animate.css/blob/master/animate.css
 // v0.2
 import { Animation, PageTransition } from 'ionic-angular';
