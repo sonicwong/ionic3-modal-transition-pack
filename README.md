@@ -1,4 +1,4 @@
-## Modal / Popover transition class for Ionic v3+ ##
+## Modal / Popover transition class for Ionic v3 ##
 https://github.com/sonicwong/ionic-modal-transition-pack
 
 # How to use
